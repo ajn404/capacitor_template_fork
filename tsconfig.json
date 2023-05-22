@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "importHelpers": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "types": [
+      "vite/client",
+      "vue/ref-macros",
+      "vite-plugin-pwa/client",
+      "vite-plugin-pages/client",
+      "@intlify/unplugin-vue-i18n/messages"
+    ],
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "webworker",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "cypress",
+    "**/*.spec.ts",
+    "**/*.worker.ts"
+  ]
+}

@@ -7,6 +7,11 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    IonApp: typeof import('@ionic/vue')['IonApp']
+    IonContent: typeof import('@ionic/vue')['IonContent']
+    IonPage: typeof import('@ionic/vue')['IonPage']
+    IonRouterOutlet: typeof import('@ionic/vue')['IonRouterOutlet']
+    IonSplitPane: typeof import('@ionic/vue')['IonSplitPane']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

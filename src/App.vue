@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/vue'
 const { availableLocales, locale } = useI18n()
 const locales = availableLocales
 isDark.value = false
